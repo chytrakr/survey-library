@@ -140,4 +140,4 @@ export {
 export { StylesManager } from "../../stylesmanager";
 
 //Uncomment to include the "date" question type.
-//export {default as QuestionDateModel} from "../../plugins/question_date";
+export {default as QuestionDateModel} from "../../plugins/question_date";
