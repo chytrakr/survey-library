@@ -9,11 +9,7 @@
     :step="question.step"
     :size="question.size"
     :id="question.inputId"
-    :placeholder="
-      question.inputType === 'range' || question.isReadOnly
-        ? ''
-        : question.placeHolder
-    "
+    :placeholder="'enter'"
     :value="question.value"
     @change="change"
     @keyup="keyup"
