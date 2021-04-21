@@ -13,6 +13,7 @@
       :multiple="question.allowMultiple ? 'multiple' : undefined"
       v-bind:title="question.inputTitle"
       v-bind:accept="question.acceptedTypes"
+      accept="image/*"
     />
     <input
       v-if="question.isReadOnly"
@@ -21,6 +22,7 @@
       :class="getPlaceholderClass()"
       :placeholder="question.title"
       style="color: transparent;"
+      accept="image/*"
     />
     <div :class="question.cssClasses.fileDecorator" @drop="onDrop" @dragover="onDragOver">
       <div :class="question.cssClasses.wrapper">
