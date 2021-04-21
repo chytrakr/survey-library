@@ -19,7 +19,7 @@
       type="file"
       disabled
       :class="getPlaceholderClass()"
-      :placeholder="question.title"
+      :placeholder="'question.title'"
       style="color: transparent;"
     />
     <div :class="question.cssClasses.fileDecorator" @drop="onDrop" @dragover="onDragOver">
