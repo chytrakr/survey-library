@@ -11,7 +11,7 @@
       :aria-invalid="question.errors.length > 0"
       :aria-describedby="question.errors.length > 0 ? question.id + '_errors' : null"  
       :multiple="question.allowMultiple ? 'multiple' : undefined"
-      v-bind:title="question.inputTitle"
+      v-bind:title="question.inputTitle + '..'"
       v-bind:accept="question.acceptedTypes"
     />
     <input
